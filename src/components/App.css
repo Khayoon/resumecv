@@ -1,0 +1,67 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  grid-column: 1;
+  grid-row: 1;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.contact-info span {
+  margin-bottom: 10px;
+}
+
+.resume-content {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.resume-content h2 {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 20
+  px 0;
+  padding: 10px 0;
+}
+
+.projects {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  padding: 20px;
+  background-color: #dddddd;
+  overflow: auto;
+}
